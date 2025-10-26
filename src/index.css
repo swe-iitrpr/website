@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* hover popup shadow scale */
+.card-pop {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card-pop:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
